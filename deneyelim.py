@@ -24,6 +24,9 @@ class anaForm(QtGui.QDialog, kayitFrm.Ui_Form):
         if(retval==16384):
             sys.exit("ÇIKIŞ YAPILDI...")
 
+    def cikis(self):
+        pass
+
 
         
 app = QtGui.QApplication(sys.argv)
