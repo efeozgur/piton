@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>626</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>341</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>GroupBox</string>
+   </property>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>81</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Adı</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Soyadı</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>TC NO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>SGK NO</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>211</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="txtAdi"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtSoyadi"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtTCNo"/>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtSGKNo"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btnKaydet">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>KAY&amp;DET</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCikis">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ÇIKIŞ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnKayitSil">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>170</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>KAYIT SİL</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QListWidget" name="liste">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>30</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>txtAdi</zorder>
+  <zorder>txtSoyadi</zorder>
+  <zorder>txtTCNo</zorder>
+  <zorder>txtSGKNo</zorder>
+  <zorder>txtSoyadi</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>liste</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
