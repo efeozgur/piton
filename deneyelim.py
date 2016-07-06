@@ -4,7 +4,7 @@ from PyQt4 import QtGui
 
 import sys, kayitFrm
 
-class anaForm(QtGui.QMainWindow, kayitFrm.Ui_Form):
+class anaForm(QtGui.QDialog, kayitFrm.Ui_Form):
     def __init__(self):
         super(anaForm, self).__init__()
         self.setupUi(self)
