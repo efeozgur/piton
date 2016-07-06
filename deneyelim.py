@@ -8,6 +8,10 @@ class anaForm(QtGui.QDialog, kayitFrm.Ui_Form):
     def __init__(self):
         super(anaForm, self).__init__()
         self.setupUi(self)
+        self.btnCikis.clicked.connect(self.cikis)
+        
+    def cikis(self):
+        sys.exit("Güle Güle ... !!!")
 
 app = QtGui.QApplication(sys.argv)
 forum = anaForm()
