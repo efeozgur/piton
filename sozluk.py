@@ -1,7 +1,5 @@
 #coding: utf-8
 import sqlite3 as sql 
-import sys,os, webbrowser,pydoc
-
 
 
 baglan = sql.connect("sozluk.sqlite3")
