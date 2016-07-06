@@ -18,9 +18,7 @@ class anaForm(QtGui.QDialog, kayitFrm.Ui_Form):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
         msg.setText("Programdan çıkmak istiyor musunuz ?")
-        #msg.setInformativeText("This is additional information")
         msg.setWindowTitle("Uyarı")
-        #msg.setDetailedText("Programı gerçekten kapatmak isteyip istemediğinizden emin olmak için açılan diyalog penceresi.")
         msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
         retval = msg.exec_()        
         if(retval==16384):
