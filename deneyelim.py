@@ -24,8 +24,9 @@ class anaForm(QtGui.QDialog, kayitFrm.Ui_Form):
         msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
         retval = msg.exec_()        
         if(retval==16384):
-            sys.exit(0)
-            
+            sys.exit("Güle Güle Yine Bekleriz...!!!")
+
+
         
 app = QtGui.QApplication(sys.argv)
 forum = anaForm()
