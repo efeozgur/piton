@@ -12,15 +12,20 @@ class anaForm(QtGui.QDialog, kayitFrm.Ui_Form):
         self.btnCikis.clicked.connect(self.cikis)
         
     def cikis(self):
+        self.mesajKutusu()
+        
+    def mesajKutusu (self):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
-        msg.setText("This is a message box")
-        msg.setInformativeText("This is additional information")
-        msg.setWindowTitle("MessageBox demo")
-        msg.setDetailedText("The details are as follows:")
-        msg.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
-        retval = msg.exec_()
-        
+        msg.setText("Programdan çıkmak istiyor musunuz ?")
+        #msg.setInformativeText("This is additional information")
+        msg.setWindowTitle("Uyarı")
+        #msg.setDetailedText("Programı gerçekten kapatmak isteyip istemediğinizden emin olmak için açılan diyalog penceresi.")
+        msg.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
+        retval = msg.exec_()        
+        if(retval==16384):
+            sys.exit(0)
+            
         
 app = QtGui.QApplication(sys.argv)
 forum = anaForm()
