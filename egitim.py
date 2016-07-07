@@ -1,4 +1,6 @@
 from turtle import *
+from os import * 
+
 
 t = Turtle()
 a=0
